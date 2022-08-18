@@ -1,0 +1,18 @@
+.clickable-content {
+    cursor: pointer;
+}
+.modal {
+    z-index: 10000;
+}
+.modal .modal-title {
+    color: #000000;
+}
+.davao-map-content {
+    position: absolute;
+    right: 0;
+    width: 15em !important;
+    top: 40px;
+    background: transparent;
+    backdrop-filter: blur(6px);
+    padding: 10px !important;
+}
