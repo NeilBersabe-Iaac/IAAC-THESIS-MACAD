@@ -7,6 +7,13 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'bahnscrift';
+	src: url('fonts/bahnschrift-webfont.woff2') format('woff2'),
+	url('fonts/bahnschrift-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /*
 	Hyperspace by HTML5 UP
@@ -29,7 +36,7 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: 'rajdhaniregular';
+	font-family: 'bahnscrift';
 	vertical-align: baseline;
 }
 
@@ -2029,12 +2036,13 @@ input, select, textarea {
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
 		background: rgba(255, 255, 255, 0.05);
-		margin: 0 0 2em 0;
+		margin: 0 0 0 0;
 	}
 
 		.features section {
-			padding: 3.5em 3em 1em 7em ;
+			padding: 3em 3em 2em 9em ;
 			width: 50%;
+			height: 20%;
 			border-top: solid 1px rgba(255, 255, 255, 0.15);
 			position: relative;
 		}
@@ -3249,7 +3257,8 @@ input, select, textarea {
 		.wrapper > .inner {
 			padding: 5em 5em 3em 3em ;
 			max-width: 100%;
-			width: 75em;
+			width: 100em;
+			height: 100vh;
 
 		}
 
@@ -3298,7 +3307,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #adadad;
+			background-color: #008080;
 		}
 
 		.wrapper.style3-alt {
