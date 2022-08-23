@@ -44,3 +44,14 @@ section, summary, time, mark, audio, video {
     backdrop-filter: blur(6px);
     padding: 10px !important;
 }
+.no-left-padding {
+    padding-left: 0px;
+}
+.embed-container {
+    margin: 0 0 10px 0;
+}
+.embed-container embed {
+    background: teal !important;
+    height: 100%;
+    padding-top: 10px;
+}
