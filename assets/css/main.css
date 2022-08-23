@@ -1,8 +1,11 @@
 @import url(fontawesome-all.min.css);
 
 @font-face {
-    font-family: Raj;
-    src: url(fonts/Rajdhani-Regular.ttf);
+	font-family: 'rajdhaniregular';
+	src: url('fonts/rajdhani-regular-webfont.woff2') format('woff2'),
+	url('fonts/rajdhani-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 /*
@@ -26,8 +29,9 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: Raj;
-	vertical-align: baseline;}
+	font-family: 'rajdhaniregular';
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -3033,7 +3037,7 @@ input, select, textarea {
 		flex-direction: row;
 		/* min-height: 22.5em; */
 		min-height: 100vh;
-		
+
 	}
 
 		body.is-ie .spotlights > section {
@@ -3957,7 +3961,7 @@ input, select, textarea {
 			column-gap: 1px;
 			row-gap: 0;
 		}
-	
+
 		.grid-item {
 			object-fit: fill;
 			padding: 0%;
