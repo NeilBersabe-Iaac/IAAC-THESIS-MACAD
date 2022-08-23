@@ -3927,7 +3927,7 @@ input, select, textarea {
 	}
 
 		#intro p {
-			font-size: .8em;
+			font-size: 1em;
 		}
 
 			@media screen and (max-width: 980px) {
