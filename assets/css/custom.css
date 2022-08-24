@@ -60,5 +60,29 @@ section, summary, time, mark, audio, video {
 .embed-container embed {
     background: teal !important;
     height: 100%;
-    padding-top: 10px;
+}
+.embed-container embed html {
+    overflow: hidden;
+}
+.geom-content {
+    margin-top: -60px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.last-geom-content {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#three .col-md-3 {
+    height:100px;
+}
+#three .col-md-3 .card {
+    background: teal !important;
+    min-height: 260px;
+}
+#three embed html {
+    overflow: hidden;
 }
