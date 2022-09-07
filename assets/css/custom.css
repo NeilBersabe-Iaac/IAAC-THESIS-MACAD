@@ -33,6 +33,7 @@ section, summary, time, mark, audio, video {
     vertical-align: baseline;
 }
 
+
 .clickable-content {
     cursor: pointer;
 }
