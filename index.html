@@ -94,7 +94,7 @@
 				</section>
 
 				<section id="floodMap" class="wrapper style2 spotlights">
-					<embed type="text/html" src="map.html" width="100%" height="800px">
+					<div id="floodMapEmbed"></div>
 					<div class="content davao-map-content">
 						<div class="inner">
 							<h2>Davao Flood Map</h2>
@@ -109,9 +109,6 @@
 								<li>Houses - XXXX</li>
 							</ul>
 							</p>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
 						</div>
 					</div>
 				</section>
@@ -119,60 +116,65 @@
 				<!-- Three -->
 					<section id="three" class="wrapper style1 fade-up embed-objects">
 						<div class="inner" style="width:100%;">
-							<div class="box">
+							<div class="box embed-park">
 								<embed src="embeds/Park/" />
 								<h5 class="card-title">Park</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-parklet">
 								<embed src="embeds/Parklet/" />
 								<h5 class="card-title">Parklet</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-marketplace">
 								<embed src="embeds/Marketplace/" />
 								<h5 class="card-title">Marketplace</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-store">
 								<embed src="embeds/Store/" />
 								<h5 class="card-title">Store</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
 
-							<div class="box">
+							<div class="box embed-bridgeshort">
 								<embed src="embeds/BridgeShort/" />
 								<h5 class="card-title">BridgeShort</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-bridgelong">
 								<embed src="embeds/BridgeLong/" />
 								<h5 class="card-title">BridgeLong</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-bridge">
 								<embed src="embeds/Bridge/" />
 								<h5 class="card-title">Bridge</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-core">
 								<embed src="embeds/Core/" />
 								<h5 class="card-title">Parklet</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-balcony">
 								<embed src="embeds/Balcony/" />
 								<h5 class="card-title">Balcony</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-housing1">
 								<embed src="embeds/Housing1/" />
 								<h5 class="card-title">Housing 1</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
-							<div class="box">
+							<div class="box embed-housing2">
 								<embed src="embeds/Housing2/" />
 								<h5 class="card-title">Housing 2</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+							<div class="box embed-stairs">
+								<embed src="embeds/Stairs/" />
+								<h5 class="card-title">Stairs</h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 							</div>
 
@@ -199,6 +201,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				$(document).ready(function() {
+					let html = '<embed type="text/html" src="map.html" width="100%" height="800px">';
+					$('#floodMapEmbed').html(html);
+				});
+			</script>
 
 	</body>
 </html>

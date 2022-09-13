@@ -72,8 +72,9 @@ section, summary, time, mark, audio, video {
 
 .embed-objects .box {
     float: left;
-    width: 25%;
+    width: 24%;
     height: 300px;
+    margin-right: 10px;
 }
 .box .card-text {
     line-height: 20px;
@@ -104,4 +105,7 @@ section, summary, time, mark, audio, video {
 }
 .clickable {
     cursor: pointer;
+}
+#three {
+    margin-top: -10px;
 }
