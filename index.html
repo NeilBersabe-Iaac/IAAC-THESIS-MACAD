@@ -27,7 +27,7 @@
 							<li><a href="#theConcept">The Concept</a></li>
 							<li><a href="#floodMap">Flood Map</a></li>
 							<li><a href="#three">Module Typologies</a></li>
-							<li><a href="interactive-apps.html">Interactive App</a></li>
+							<li><a href="interactive-game.html">Interactive App</a></li>
 						</ul>
 					</nav>
 					<div class="nav-footer">
@@ -64,7 +64,7 @@
 					<div class="inner" style="width: 100%;">
 						<h2>The Concept</h2>
 						<div class="features">
-							<section class="clickable the-problem">
+							<section class="clickable modable" id="theProblem">
 								<span class="icon solid major fa-code"></span>
 								<h3>The Problem</h3>
 								<ul>
@@ -74,7 +74,7 @@
 									<li>Community Behavior</li>
 								</ul>
 							</section>
-							<section class="clickable">
+							<section class="clickable modable" id="goalsAndObjectives">
 								<span class="icon solid major fa-lock"></span>
 								<h3>Goals & Objectives</h3>
 								<ul>
@@ -84,7 +84,7 @@
 									<li>Adaptability</li>
 								</ul>
 							</section>
-							<section class="clickable">
+							<section class="clickable modable" id="methodology">
 								<span class="icon solid major fa-cog"></span>
 								<h3>The Methodology</h3>
 								<ul>
@@ -93,9 +93,9 @@
 									<li>Environmental Quality</li>
 									<li>Adaptability</li>
 								</ul>
-								
+
 							</section>
-							<section class="clickable">
+							<section class="clickable modable" id="dataAndAnalaysis">
 								<span class="icon solid major fa-desktop"></span>
 								<h3>Data & Analysis</h3>
 								<ul>
@@ -105,7 +105,7 @@
 									<li>Adaptability</li>
 								</ul>
 							</section>
-							<section class="clickable">
+							<section class="clickable modable" id="keyPerf">
 								<span class="icon solid major fa-link"></span>
 								<h3>Key Performance Indicator</h3>
 								<ul>
@@ -115,7 +115,7 @@
 									<li>Adaptability</li>
 								</ul>
 							</section>
-							<section class="clickable">
+							<section class="clickable modable" id="machineLearning">
 								<span class="icon major fa-gem"></span>
 								<h3>Machine Learning: Regression</h3>
 								<ul>
@@ -228,8 +228,39 @@
 		</footer>
 
 		<!-- The Modal -->
-		<div id="myModal" class="modal">
+		<div id="theProblemModal" class="modal">
 			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
+			</div>
+		</div>
+		<div id="goalsAndObjectivesModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
+			</div>
+		</div>
+		<div id="methodologyModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
+			</div>
+		</div>
+		<div id="dataAndAnalaysisModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
+			</div>
+		</div>
+		<div id="keyPerfModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
+			</div>
+		</div>
+		<div id="machineLearningModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
 				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
 			</div>
 		</div>
@@ -248,27 +279,31 @@
 				$('#floodMapEmbed').html(html);
 
 				let embedObject = {
-					'park' : '<embed src="embeds/Park/" />',
-					'parklet' : '<embed src="embeds/Parklet/" />',
-					'marketplace' : '<embed src="embeds/Marketplace/" />',
-					'store' : '<embed src="embeds/Store/" />',
-					'bridgeshort' : '<embed src="embeds/BridgeShort/" />',
-					'bridgelong' : '<embed src="embeds/BridgeLong/" />',
-					'bridge' : '<embed src="embeds/Bridge/" />',
-					'core' : '<embed src="embeds/Core/" />',
-					'balcony' : '<embed src="embeds/Balcony/" />',
-					'housing1' : '<embed src="embeds/Housing1/" />',
-					'housing2' : '<embed src="embeds/Housing2/" />',
-					'stairs' : '<embed src="embeds/Stairs/" />'
+					'park': '<embed src="embeds/Park/" />',
+					'parklet': '<embed src="embeds/Parklet/" />',
+					'marketplace': '<embed src="embeds/Marketplace/" />',
+					'store': '<embed src="embeds/Store/" />',
+					'bridgeshort': '<embed src="embeds/BridgeShort/" />',
+					'bridgelong': '<embed src="embeds/BridgeLong/" />',
+					'bridge': '<embed src="embeds/Bridge/" />',
+					'core': '<embed src="embeds/Core/" />',
+					'balcony': '<embed src="embeds/Balcony/" />',
+					'housing1': '<embed src="embeds/Housing1/" />',
+					'housing2': '<embed src="embeds/Housing2/" />',
+					'stairs': '<embed src="embeds/Stairs/" />'
 				};
 
 				$.each(embedObject, function(index, value) {
 					$('.embed-' + index).html(value);
 				});
 
-				$('.the-problem').on('click', function (event){
-					var modal = document.getElementById("myModal");
-					modal.style.display = "block";
+				$('.modable').on('click', function (){
+					let id = $(this).attr('id');
+					$('#' + id + 'Modal').fadeIn();
+				});
+
+				$('.modal .close').on('click', function () {
+					$('.modal').fadeOut();
 				});
 			});
 		</script>
