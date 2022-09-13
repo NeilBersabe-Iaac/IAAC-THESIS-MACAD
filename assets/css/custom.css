@@ -6,11 +6,11 @@
     font-style: normal;
 }
 @font-face {
-	font-family: 'bahnscrift';
-	src: url('fonts/bahnschrift-webfont.woff2') format('woff2'),
-	url('fonts/bahnschrift-webfont.woff') format('woff');
-	font-weight: 100;
-	font-style: normal;
+    font-family: 'bahnscrift';
+    src: url('fonts/bahnschrift-webfont.woff2') format('woff2'),
+    url('fonts/bahnschrift-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html, body, div, span, applet, object,
@@ -33,16 +33,20 @@ section, summary, time, mark, audio, video {
     vertical-align: baseline;
 }
 
+#intro .inner {
+    color: #ffffff;;
+}
+#intro .inner h1 {
+    font-size: 4.75em;
+    margin-bottom: 2px;
+}
+#intro .inner h3 {
+    font-size: 1.75em;
+}
+#intro .inner p {
+    line-height: 28px;
+}
 
-.clickable-content {
-    cursor: pointer;
-}
-.modal {
-    z-index: 10000;
-}
-.modal .modal-title {
-    color: #000000;
-}
 .davao-map-content {
     position: absolute;
     right: 0;
@@ -52,71 +56,52 @@ section, summary, time, mark, audio, video {
     backdrop-filter: blur(6px);
     padding: 10px !important;
 }
-.no-left-padding {
-    padding-left: 0px;
-}
-.embed-container {
-    margin: 0 0 10px 0;
-}
-.embed-container embed {
-    background: teal !important;
-    height: 100%;
-}
-.embed-container embed html {
-    overflow: hidden;
-}
-.geom-content {
-    margin-top: -60px;
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
-.last-geom-content {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#three .col-md-3 {
-    height:100px;
-}
-#three .col-md-3 .card {
-    background: teal !important;
-    min-height: 260px;
-}
-#three embed html {
-    overflow: hidden;
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #464646; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-
-  .img_1 {
+.img_1 {
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
-      filter: gray; /* IE5+ */
-      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-      -webkit-transition: all .5s ease-in-out;  
-    }
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .5s ease-in-out;
+}
 
-    .img_1:hover {
+.img_1:hover {
     filter: none;
-      -webkit-filter: grayscale(0);
-      -webkit-transform: scale(1.05);
-    }
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.05);
+}
+
+.embed-objects .box {
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+.box .card-text {
+    line-height: 20px;
+}
+.nav-footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.macaad {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.features section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.clearfix {
+    clear: both;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.clickable {
+    cursor: pointer;
+}
