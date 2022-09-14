@@ -64,14 +64,14 @@
 					<div class="inner" style="width: 100%;">
 						<h2>The Concept</h2>
 						<div class="features">
-							<section class="clickable modable" id="theProblem">
+							<section>
 								<span class="icon solid major fa-code"></span>
 								<h3>The Problem</h3>
 								<ul>
-									<li>Flooding</li>
-									<li>Environment</li>
-									<li>Housing</li>
-									<li>Community Behavior</li>
+									<li class="clickable modable" id="theProblem_Flooding">Flooding</li>
+									<li class="clickable modable" id="theProblem_Environment">Environment</li>
+									<li class="clickable modable" id="theProblem_Housing">Housing</li>
+									<li class="clickable modable" id="theProblem_CommunityBehavior">Community Behavior</li>
 								</ul>
 							</section>
 							<section class="clickable modable" id="goalsAndObjectives">
@@ -88,10 +88,12 @@
 								<span class="icon solid major fa-cog"></span>
 								<h3>The Methodology</h3>
 								<ul>
-									<li>Flood Risk Mitigation</li>
-									<li>Housing Quality</li>
-									<li>Environmental Quality</li>
-									<li>Adaptability</li>
+									<li>Flood Grid Mapping</li>
+									<li>Building Typologies</li>
+									<li>Build Zones</li>
+									<li>Parametric Model</li>
+									<li>Performative Analysis & Machine Learning</li>
+									<li>Web Deployment</li>
 								</ul>
 
 							</section>
@@ -233,22 +235,40 @@
 		</footer>
 
 		<!-- The Modal -->
-		<div id="theProblemModal" class="modal">
+		<div id="theProblem_FloodingModal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
-				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
+				<img src="\images\Modals\Flooding 01comp.jpg" class="img-responsive" />
+			</div>
+		</div>
+		<div id="theProblem_EnvironmentModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="\images\Modals\Environment 01.jpg" class="img-responsive" />
+			</div>
+		</div>
+		<div id="theProblem_HousingModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="\images\Problem\Housing 01.jpg" class="img-responsive" />
+			</div>
+		</div>
+		<div id="theProblem_CommunityBehaviorModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src="\images\Problem\CommunityBehavior.jpg" class="img-responsive" />
 			</div>
 		</div>
 		<div id="goalsAndObjectivesModal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
-				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
+				<img src="\images\Modals\Objectives.jpg" class="img-responsive" />
 			</div>
 		</div>
 		<div id="methodologyModal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
-				<img src="images/typologies/cover-photo-new.png" class="img-responsive" />
+				<img src="\images\Modals\Methodology-01.jpg" class="img-responsive" />
 			</div>
 		</div>
 		<div id="dataAndAnalaysisModal" class="modal">
