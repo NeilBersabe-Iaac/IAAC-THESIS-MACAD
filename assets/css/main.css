@@ -3923,3 +3923,23 @@ input, select, textarea {
 			}
 
 		}
+
+		/* width */
+::-webkit-scrollbar {
+	width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #5c5c5c; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #169696; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgb(65, 65, 65); 
+  }
