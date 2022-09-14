@@ -1,14 +1,24 @@
 # RE:SETTLE
-//Iaac-Macad-Bimsc.DataMgt-FinalProject.Neil John Bersabe
+//Iaac-Macad-Thesis.Neil John Bersabe
 
 
-![](/images/Finals.jpg?raw=true)
+![](/images/POSTER_COVER.png?raw=true)
 
-## _PROJECT DESCRIPTION
-Solihiya is a parametric pavilion configurator based from the Philippine sunburst weaving pattern of the same name. 
-The aim of the configurator is to the give users feedback on implications of different parametric configurations to the pavilion like height, openings, and solar parameters. This also gives users insight on different shadow patterns and behaviours depending on vectors got from solar angles and times of day. A color gradient is applied to the mesh edges of the pavilion corresponding to the distance from the sun.
+## _PROJECT ABSTRACT
+The rapid population growth of cities affects the acquisition of land tenure, land security, and production of good quality housing.  The constant pressure of living in highly urbanized cities forced the working class to live in lower-quality housing.  In return, these people have reverted to living in areas within the poorer residential districts of the city. 
 
-## _INSTRUCTIONS
+Due to the low enforcement of zoning laws in some cities, people living in such conditions tend to build housing settlements in no-build or high-risk flood zones to survive, making the community vulnerable to disasters. 
+
+So the question is:
+
+Is there a need to rethink these communities' current housing development strategies?
+
+Rethinking current housing designs can be a platform for builders and planners to provide new innovative solutions.  Understanding the current housing conditions can be used as a learning tool to achieve the effectiveness and efficiency of new housing design strategies. 
+
+The project aims to create a tool to analyze housing strategies by employing machine learning to predict the performances of different housing iterations and democratizes the design process by deploying the parametric model to the web.  The participatory approach to design would hopefully empower the users and planners with the ability to infer, analyze, and improve on different possible solutions interactively.
+
+
+## _INSTRUCTIONS (TO BE UPDATED)
 Play around the configuration of the pavilion as desired.  
 You can download the 3dm geometries with the download button
 
@@ -46,23 +56,18 @@ Format: (ParamName) - (Name),(Description); (DomainValueMin, DomainValueMax)
 - [Link to my Rhino.compute repo](https://github.com/NeilBersabe-Iaac/compute.rhino3d.appserver/tree/main/src/examples/solihiya00_v3)
 - [Link to the Heroku App](https://bimsc22-neiljohnbersabe.herokuapp.com/examples/solihiya00_v3/)
 - [Link to Github Pages (Landing Page)](https://neilbersabe-iaac.github.io/IAAC-BIMSC-FINAL/)
-
-
-## _DATA FLOW DIAGRAM
-1. [Inputs & Outputs](docs/InputOutput.jpg)
-2. [Data Flow Diagram](docs/DataFlow.png)
+- [Link to Book and Papers](https://neilbersabe-iaac.github.io/IAAC-BIMSC-FINAL/)
+- [Link to Blogpost](https://neilbersabe-iaac.github.io/IAAC-BIMSC-FINAL/)
 
 ## _CREDITS
 Project by:  
 Neil John Bersabe
 
 Faculty:  
-David Andres Leon  
-Hesham Shawqy  
+Angelos Chronis
 
 
-BIM & Smart Construction  
-Cloud Based Data Management  
+Thesis Studio
 Master in Advanced Computation for Architecture and Design  
 IAAC - 2022
 
