@@ -131,7 +131,7 @@ section, summary, time, mark, audio, video {
     padding: 0px;
     border: 5px solid rgb(45, 45, 45);
     width: 80%; /* Could be more or less, depending on screen size */
-    border-radius: 2%;
+    border-radius: 20px;
 }
 
 /* The Close Button */
