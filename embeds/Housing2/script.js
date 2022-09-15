@@ -45,16 +45,20 @@ function init() {
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0x008080);
   camera = new THREE.PerspectiveCamera(
-    75,
+    35,
     window.innerWidth / window.innerHeight,
     0.1,
     1000
   );
 //   camera.lookAt(new THREE.Vector3(0,0,50));
   camera.lookAt(0,0,10);
-  camera.position.y = -15;
-  camera.position.x = -15;
-  camera.position.z = 50;
+  camera.position.y = 10;
+  camera.position.x = 10;
+  camera.position.z = 10;
+
+  
+  hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 2);
+  scene.add(hemiLight);
 //   Object3D.getWorldDirection (0,0,0)
 
   // create the renderer and add it to the html
@@ -65,6 +69,8 @@ function init() {
   document.body.appendChild(renderer.domElement);
 
   const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enablePan = false;
+  controls.enableZoom = false;
 
   const directionalLight = new THREE.DirectionalLight(0xffffff);
   directionalLight.position.set(0, 0, 2);

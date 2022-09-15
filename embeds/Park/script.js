@@ -45,17 +45,20 @@ function init() {
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0x008080);
   camera = new THREE.PerspectiveCamera(
-    30,
+    20,
     window.innerWidth / window.innerHeight,
     0.1,
     1000
   );
-  camera.lookAt(new THREE.Vector3(0,1,0));
-  camera.lookAt(0,5,0);
-  camera.position.y = -5;
+  camera.lookAt(new THREE.Vector3(0,1,5));
+  camera.lookAt(0,5,10);
+  camera.position.y = 0;
   camera.position.x = -40;
-  camera.position.z = 20;
+  camera.position.z = 40;
+
   
+  hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 2);
+  scene.add(hemiLight);
 //Object3D.getWorldDirection (0,0,0)
 
   // create the renderer and add it to the html

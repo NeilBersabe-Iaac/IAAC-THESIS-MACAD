@@ -55,6 +55,10 @@ function init() {
   camera.position.y = 10;
   camera.position.x = 10;
   camera.position.z = 10;
+
+  
+  hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 2);
+  scene.add(hemiLight);
 //   Object3D.getWorldDirection (0,0,0)
 
   // create the renderer and add it to the html
@@ -65,6 +69,8 @@ function init() {
   document.body.appendChild(renderer.domElement);
 
   const controls = new OrbitControls(camera, renderer.domElement);
+  controls.enablePan = false;
+  controls.enableZoom = false;
 
   const directionalLight = new THREE.DirectionalLight(0xffffff);
   directionalLight.position.set(0, 0, 2);
