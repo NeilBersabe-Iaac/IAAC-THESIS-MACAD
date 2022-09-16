@@ -55,6 +55,10 @@ function init() {
   camera.position.y = 8;
   camera.position.x = 8;
   camera.position.z = 8;
+
+  
+  hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 2);
+  scene.add(hemiLight);
 //   Object3D.getWorldDirection (0,0,0)
 
   // create the renderer and add it to the html
