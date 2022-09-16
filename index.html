@@ -28,7 +28,7 @@
 							<li><a href="#theConcept">The Concept</a></li>
 							<li><a href="#floodMap">Flood Map</a></li>
 							<li><a href="#three">Module Typologies</a></li>
-							<li><a href=" https://macad-thesis-resettle.herokuapp.com/examples/SABER_THESIS/index.html ">Interactive App</a></li>
+							<li><a href="https://macad-thesis-resettle.herokuapp.com/examples/RESETTLE_FINAL/index.html">Interactive App</a></li>
 						</ul>
 					</nav>
 					<div class="nav-footer">
@@ -47,13 +47,25 @@
 			<div id="wrapper">
 				<!-- Intro -->
 				<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<div id="intro1" class="intro-img">
+						<img src="assets/css/images/1.jpg" />
+					</div>
+					<div id="intro2" class="intro-img">
+						<img src="assets/css/images/2.jpg" />
+					</div>
+					<div id="intro3" class="intro-img">
+						<img src="assets/css/images/3.jpg" />
+					</div>
+					<div id="intro4" class="intro-img">
+						<img src="assets/css/images/4.jpg" />
+					</div>
 					<div class="inner">
 						<h1>RE:SETTLE</h1>
-						<h3>Rethinking Resettlement Strategies for 
+						<h3>Rethinking Resettlement Strategies for
 							<br>
 							Urban Housing and Flood Mitigation</h3>
 						<p><h5>
-							Rethinking current housing designs can be a platform for designers and planners to provide new innovative solutions.  Understanding the current housing conditions can be used as a learning tool to achieve the effectiveness and efficiency of new housing design strategies. 
+							Rethinking current housing designs can be a platform for designers and planners to provide new innovative solutions.  Understanding the current housing conditions can be used as a learning tool to achieve the effectiveness and efficiency of new housing design strategies.
 
 The project aims to create a tool to analyze housing strategies by employing machine learning to predict the performances of different housing iterations and democratizes the design process by deploying the parametric model to the web.  The participatory approach to design would hopefully empower the users and planners with the ability to infer, analyze, and improve on different possible solutions interactively.</h5></p>
 					</div>
@@ -100,7 +112,7 @@ The project aims to create a tool to analyze housing strategies by employing mac
 									<li>Density Index</li>
 								</ul>
 							</section>
-							<section class="clickable modable" id="methodology">
+							<section class="clickable modable" id="ParametricModel">
 								<span class="icon solid major fa-cog"></span>
 								<h3>The Parametric Model</h3>
 								<ul>
@@ -109,17 +121,15 @@ The project aims to create a tool to analyze housing strategies by employing mac
 									<li>Field Rules</li>
 									<li>Community Aggregation</li>
 									<li>Neighborhood Clustering</li>
-									<li>GH Definition</li>
 								</ul>
 							</section>
 							<section class="clickable modable" id="machineLearning">
 								<span class="icon major fa-gem"></span>
-								<h3>Machine Learning: Regression</h3>
+								<h3>AI: Machine Learning</h3>
 								<ul>
-									<li>Typology Mapping</li>
-									<li>Community Ecosystem</li>
-									<li>Environmental Quality</li>
-									<li>Adaptability</li>
+									<li>Data Set</li>
+									<li>Feature Selection</li>
+									<li>Supervised Machine Learning: Regression</li>
 								</ul>
 							</section>
 						</div>
@@ -139,7 +149,7 @@ The project aims to create a tool to analyze housing strategies by employing mac
 								<li>Multi-Storey Dwellings - 1106</li>
 							</ul>
 							<br>
-							<h3> Houses Intersecting with Flood Zones 
+							<h3> Houses Intersecting with Flood Zones
 							</h3>
 								<br>
 							<ul style="font-size: .85em";>
@@ -228,7 +238,7 @@ The project aims to create a tool to analyze housing strategies by employing mac
 							<div class="box">
 								<div class="embed-store"></div>
 								<h5 class="card-title">Store</h5>
-								<p class="card-text">									
+								<p class="card-text">
 									<div id="inlinetexts">
 										<ul id="inlinetexts_0">
 											<li>Commercial</li>
@@ -397,10 +407,16 @@ The project aims to create a tool to analyze housing strategies by employing mac
 				<img src=".\images\Modals\KPI with Line.jpg" class="img-responsive" />
 			</div>
 		</div>
+		<div id="ParametricModelModal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<img src=".\images\Modals\ParamModel Comp.jpg" class="img-responsive" />
+			</div>
+		</div>
 		<div id="machineLearningModal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
-				<img src="./images/typologies/cover-photo-new.png" class="img-responsive" />
+				<img src=".\images\Modals\Chapter 5 comp.jpg" class="img-responsive" />
 			</div>
 		</div>
 
@@ -414,7 +430,7 @@ The project aims to create a tool to analyze housing strategies by employing mac
 		<script src="assets/js/main.js"></script>
 		<script>
 			$(document).ready(function() {
-				let html = '<embed type="text/html" src="map.html" width="100%" height="800px">';
+				let html = '<embed type="text/html" src="map.html" width="100%" height="1000px">';
 				$('#floodMapEmbed').html(html);
 
 				let embedObject = {
@@ -444,6 +460,35 @@ The project aims to create a tool to analyze housing strategies by employing mac
 				$('.modal .close').on('click', function () {
 					$('.modal').fadeOut();
 				});
+
+				// let imageUrls = [
+				// 	'assets/css/images/intro.jpg',
+				// 	'assets/css/images/1.jpg',
+				// 	'assets/css/images/2.jpg',
+				// 	'assets/css/images/3.jpg',
+				// 	'assets/css/images/4.jpg'
+				// ]
+				// let i = 0;
+				// setInterval(function () {
+				// 	if (i === imageUrls.length - 1) {
+				// 		i = 0;
+				// 	}
+				// 	$('#intro').animate({opacity: 0.7}, 500, function () {
+				// 		$('#intro').animate({opacity: 1}, 100, function () {
+				// 			$('#intro').css('background-image', 'url("' + imageUrls[i] + '")');
+				// 		});
+				// 	});
+				// 	i++;
+				// }, 5000);
+				let i = 1;
+				setInterval(function() {
+					if (i === 5) {
+						i = 1;
+					}
+					$('.intro-img').fadeOut();
+					$('#intro'+i).fadeIn();
+					i++;
+				}, 5000);
 			});
 		</script>
 
