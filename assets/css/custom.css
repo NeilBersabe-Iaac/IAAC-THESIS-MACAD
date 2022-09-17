@@ -34,8 +34,9 @@ section, summary, time, mark, audio, video {
 }
 
 #intro .inner {
-    color: #ffffff;;
-    /*margin-top: 450px;*/
+    color: #ffffff;
+    bottom: 0px;
+    position: absolute;
 }
 #intro .inner h1 {
     font-size: 4.75em;
@@ -170,11 +171,11 @@ section, summary, time, mark, audio, video {
 }
     /* Menu */
 
-	ul#inlinetexts_0 {
-		list-style: none;
-		padding: 0;
-		vertical-align: middle;
-	}
+ul#inlinetexts_0 {
+    list-style: none;
+    padding: 0;
+    vertical-align: middle;
+}
 
 ul#inlinetexts_0 > li {
 border-left: solid 1px rgba(255, 255, 255, 0.15);
