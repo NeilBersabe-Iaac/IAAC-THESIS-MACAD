@@ -197,7 +197,16 @@ ul#inlinetexts_0 > li:first-child {
 }
 
 /*responsive css*/
-@media  only screen and (max-width: 1024px) {
+@media only screen and (max-width: 2560px) and (min-width: 2000px) {
+    #theConcept {
+        height: 1440px;
+    }
+    #floodMapEmbed embed {
+        height: 1440px !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     #intro {
         min-height: 825px;
     }
