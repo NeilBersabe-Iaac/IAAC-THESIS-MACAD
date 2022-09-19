@@ -56,17 +56,12 @@ function init() {
   camera.position.x = 10;
   camera.position.z = 10;
 
-  hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 2);
-  scene.add(hemiLight);
 
 //   Object3D.getWorldDirection (0,0,0)
 
   // create the renderer and add it to the html
   
   renderer = new THREE.WebGLRenderer({alpha: true});
-
-
-
   renderer.setClearColor(0x000000,0);
   renderer.setSize(window.innerWidth, window.innerHeight);
   document.body.appendChild(renderer.domElement);
