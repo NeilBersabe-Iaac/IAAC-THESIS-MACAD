@@ -30,7 +30,7 @@ import { Rhino3dmLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124.0/examp
 import { HDRCubeTextureLoader } from 'https://cdn.jsdelivr.net/npm/three@0.124.0/examples/jsm/loaders/HDRCubeTextureLoader.js';
 
 
-let camera, scene, raycaster, renderer, selectedMaterial
+let camera, scene, raycaster, renderer, selectedMaterial, hemiLight;
 const model = '../assets/module_parklet'
 const mouse = new THREE.Vector2()
 window.addEventListener( 'click', onClick, false);
@@ -56,9 +56,7 @@ function init() {
   camera.position.x = 10;
   camera.position.z = 10;
 
-  
-  hemiLight = new THREE.HemisphereLight(0xffeeb1, 0x080820, 2);
-  scene.add(hemiLight);
+
 //   Object3D.getWorldDirection (0,0,0)
 
   // create the renderer and add it to the html
@@ -72,10 +70,10 @@ function init() {
   controls.enablePan = false;
   controls.enableZoom = false;
 
-  const directionalLight = new THREE.DirectionalLight(0xffffff);
+  const directionalLight = new THREE.DirectionalLight(0xffeeb1);
   directionalLight.position.set(0, 0, 2);
   directionalLight.castShadow = true;
-  directionalLight.intensity = 2;
+  directionalLight.intensity = 1;
 
   scene.add(directionalLight);
 
