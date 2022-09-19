@@ -284,3 +284,6 @@ ul#inlinetexts_0 > li:first-child {
         /*height: 393px;*/
     }
 }
+li:hover{
+    color: aqua;
+}
